@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/lib/css/prueba.css">
+</head>
+
+<body>
+  <layout-cajon class="pres">
+    <mi-nav slot="nav"></mi-nav>
+    <h1></h1>
+    <section id="código">
+      <h2>Código</h2>
+      <pre><span class="activo">1</span> class Cl01 {
+    constructor(b) {
+      this.a = b;
+    }
+    mensaje(c) {
+      console.log(c + this.a);
+    }
+  }
+  const a = new Cl01(4);
+  a.mensaje(2);
+</pre>
+    </section>
+    <section id="stack">
+      <h2>Stack</h2>
+      <div class="creación" id="script">
+        <span><span class="activo">1</span></span>
+        <table class="frame">
+          <caption><i>Script</i></caption>
+          <tr id="Script_Cl01">
+            <th><span class="activo">1</span>Cl01</th>
+            <td><span class="activo">1</span><a href="#id1">1</a></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="heap">
+      <h2>Heap</h2>
+      <div class="creación" id="Cl01">
+        <span><span class="activo">1</span></span>
+        <table class="objeto" id="id1">
+          <caption>1: class</caption>
+          <tr>
+            <th>name</th>
+            <td>Cl01</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="explicación">
+      <h2>Explicación</h2>
+      <ol style="list-style-type: lower-alpha;">
+        <li value="a">
+          Se crea un
+          <a href="#script">registro de activación para el script.</a>
+        </li>
+        <li>Se crea la <a href="#Cl01">clase Cl01</a> en el Heap.</li>
+        <li>
+          En el registro del script se crea la
+          <a href="#Script_Cl01">referencia Cl01</a> que apunta a la
+          <a href="#Cl01">clase Cl01</a>.
+        </li>
+      </ol>
+    </section>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>Arreglos de Objetos</h1>
+    <div class="marco-lectura">
+      <figure>
+        <img src="img/arrobjs.svg" alt="Imagina un arreglo de objetos">
+      </figure>
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=class%20Clao%20%7B%0A%20%20constructor%28a%29%20%7B%0A%20%20%20%20this.a%20%3D%20a%3B%0A%20%20%7D%0A%7D%0Aconst%20arro1%20%3D%20%5B%0A%20%20new%20Clao%28-3%29,%0A%20%20new%20Clao%284%29,%0A%20%20new%20Clao%288%29%5D%3B%0Aconsole.log%28arro1%29%3B%0Afor%20%28var%20ob%20of%20arro1%29%20%7B%0A%20%20console.log%28ob.a%29%3B%0A%7D&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">
+          Programa animado de arreglos de instancias.
+        </a>
+      </p>
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=const%20arro2%20%3D%20%5B%0A%20%20%7B%20a%3A%20-3%20%7D,%0A%20%20%7B%20a%3A%204%20%7D,%0A%20%20%7B%20a%3A%208%20%7D%5D%3B%0Aconsole.log%28arro2%29%3B%0Afor%20%28var%20ob%20of%20arro2%29%20%7B%0A%20%20console.log%28ob.a%29%3B%0A%7D&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">
+          Programa animado de arreglos de literales de objetos.
+        </a>
+      </p>
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=const%20arro3%20%3D%20%5B%0A%20%20%7B%20a%3A%20-3%20%7D,%0A%20%20%7B%20a%3A%204%20%7D,%0A%20%20%7B%20a%3A%208%20%7D%5D%3B%0Aarro3.forEach%28%0A%20%20n%20%3D%3E%20console.log%28n.a%29%29%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">
+          Programa animado de arreglos de literales de objetos y foreach.
+        </a>
+      </p>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

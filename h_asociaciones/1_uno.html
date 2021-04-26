@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>Asociaciones a Uno</h1>
+    <div class="marco-lectura">
+      <h2>Imagina</h2>
+      <figure>
+        <img src="img/a_uno.svg" alt="Imagina asociaciones a uno">
+      </figure>
+      <h2>Diagrama de Clases</h2>
+      <figure>
+        <img class="dc" src="img/clases_a_uno.svg"
+          alt="Diagrama de clases a uno">
+      </figure>
+      <h2>Frases</h2>
+      <p>Una sonaja tiene como <em>dueño</em> a <strong>un bebé</strong>.</p>
+      <h3>Código</h3>
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=class%20Beb%C3%A9%20%7B%0A%20%20constructor%28nombre%29%20%7B%0A%20%20%20%20this.nombre%20%3D%20nombre%3B%0A%20%20%7D%0A%7D%0Aclass%20Sonaja%20%7B%0A%20%20constructor%28modelo%29%20%7B%0A%20%20%20%20this.modelo%20%3D%20modelo%3B%0A%20%20%20%20this.due%C3%B1o%20%3D%20null%3B%0A%20%20%7D%20%20%0A%7D%0Aconst%20telSonajita1%20%3D%20new%20Sonaja%28%22sonajita1%22%29%3B%0Alet%20telQk%20%3D%20new%20Beb%C3%A9%28%22qk%22%29%3B%0AtelSonajita1.due%C3%B1o%20%3D%20telQk%3B%0AtelQk%20%3D%20null%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">
+          Programa animado de asociaciones a uno.
+        </a>
+      </p>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

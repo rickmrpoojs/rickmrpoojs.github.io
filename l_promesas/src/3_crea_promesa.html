@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,
+       initial-scale=1.0">
+    <title>Crea Promesas</title>
+  </head>
+  <body>
+    <h1>Crea Promesas</h1>
+    <p>
+      <button
+        onclick="ejecuta();">
+        Ejecuta
+      </button>
+    </p>
+    <footer>
+      <p>
+        &copy; 2020
+        Gilberto Pacheco Gallegos.
+      </p>
+    </footer>
+    <script>
+      function
+        fnÉxito(resolve, reject) {
+        setTimeout(
+          () => resolve("Hola"),
+          5000);
+      }
+      function
+        fnFalla(resolve, reject) {
+        setTimeout(
+          () => reject(new Error(
+            "ouch")),
+          5000);
+      }
+      async function ejecuta() {
+        try {
+          const r1 =
+            await new Promise(
+              fnÉxito);
+          alert(`Éxito 1 ${r1}`);
+        } catch (e) {
+          alert("Falló1 : " +
+            e.message);
+        }
+        try {
+          const r2 =
+            await new Promise(
+              fnFalla);
+          alert(`Éxito 2: ${r2}`);
+        } catch (e) {
+          alert("Falló 2: " +
+            e.message);
+        }
+      }
+    </script>
+  </body>
+</html>

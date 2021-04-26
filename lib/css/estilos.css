@@ -1,0 +1,182 @@
+/* This work by Gilberto Pacheco Gallegos is licensed under the Creative Commons
+ * Atribución 4.0 Internacional License. To view a copy of this license, visit
+ * http://creativecommons.org/licenses/by/4.0/. */
+
+@import "./mi-footer.css";
+@import "/lib/css/material-icons.css";
+@import "/lib/css/ubuntu-mono.css";
+@import "/lib/css/ubuntu.css";
+@import "/lib/css/gentium-book-basic.css";
+body {
+  visibility: hidden;
+}
+
+body.visible {
+  visibility: visible;
+}
+
+body::-webkit-scrollbar {
+  width: var(--anchoThumb);
+  height: var(--anchoThumb);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--colScrollbar);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--colThumb);
+  border-radius: var(--borderRadiusThumb);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: var(--colThumbActivo);
+}
+
+h1:not(.default),
+h2:not(.default),
+h3:not(.default) {
+  font-family: var(--fontSans);
+  color: var(--colTituloLetra);
+  text-shadow: 3px 1px 2px #cccccc;
+}
+
+h1:not(.default) strong,
+h2:not(.default) strong,
+mi-nav a,
+ctrl-diapositiva a {
+  font-family: var(--fontSans);
+}
+
+h1 strong,
+a strong {
+  color: var(--colTituloStrong);
+}
+
+muestra-codigo>div>div {
+  white-space: nowrap;
+}
+
+mi-nav summary h3:not(.default),
+mi-nav summary h4:not(.default) {
+  color: var(--colSummary);
+  display: inline;
+  font-family: var(--fontSans);
+}
+
+mi-nav .actual h3,
+mi-nav .actual h4 {
+  font-style: oblique;
+}
+
+@media screen and (max-width: 999px) {
+  h1.presentación {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+  h1.presentación {
+    font-size: 8vh;
+  }
+}
+
+a.actual {
+  font-weight: bold;
+  color: var(--colNavResaltada);
+}
+
+nav-local {
+  display: block;
+}
+
+iframe {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.marco-lectura {
+  max-width: var(--anchoLectura);
+  margin: 1rem auto;
+}
+
+.marco-lectura p {
+  text-align: justify;
+}
+
+/* No funciona bien con display:flex en pantallas pequeñas. */
+.horizontal {
+  text-align: center;
+}
+
+.horizontal>* {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.horizontal>*:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.columnas-4 {
+  columns: 4 180px;
+  column-gap: 1rem;
+}
+
+.columnas-2 {
+  columns: 2 360px;
+  column-gap: 1rem;
+}
+
+pre {
+  font-family: var(--fontMono);
+}
+
+code.language-html {
+  color: #880000;
+  font-family: var(--fontMono);
+}
+
+code.language-css {
+  color: #ff0000;
+  font-family: var(--fontMono);
+}
+
+code.language-javascript {
+  color: blue;
+  font-family: var(--fontMono);
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+.resaltado {
+  background-color: rgb(255, 255, 89);
+}
+
+.resaltado2 {
+  background-color: rgb(255, 214, 139);
+}
+
+table.borde {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.borde,
+table.borde td {
+  border: thin solid;
+  border-collapse: collapse;
+}
+
+table.borde th,
+table.borde td {
+  padding: 0.4rem;
+}

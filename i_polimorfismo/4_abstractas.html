@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>Clases Abstractas</h1>
+    <div class="marco-lectura">
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=class%20Deportista%20%7B%0A%20%20constructor%28nombre%29%20%7B%0A%20%20%20%20this.nombre%20%3D%20nombre%3B%0A%20%20%7D%0A%20%20pres%C3%A9ntate%28%29%20%7B%0A%20%20%20%20console.log%28%0A%20%20%20%20%20%20%60Soy%20%24%7Bthis.nombre%7D.%60%29%3B%0A%20%20%7D%0A%20%20/**%20%40abstract%20*/%0A%20%20anota%28%29%20%7B%0A%20%20%20%20throw%20new%20Error%28%22abstract%22%29%3B%0A%20%20%7D%0A%7D%0Aclass%20Basketbolista%0A%20%20extends%20Deportista%20%7B%0A%20%20constructor%28nombre%29%20%7B%0A%20%20%20%20super%28nombre%29%3B%0A%20%20%7D%0A%20%20/**%20%40override%20*/%0A%20%20anota%28%29%20%7B%0A%20%20%20%20console.log%28%22Encesto.%22%29%3B%0A%20%20%7D%0A%7D%0Aclass%20Futbolista%0A%20%20extends%20Deportista%20%7B%0A%20%20constructor%28nombre%29%20%7B%0A%20%20%20%20super%28nombre%29%3B%0A%20%20%7D%0A%20%20/**%20%40override%20*/%0A%20%20anota%28%29%20%7B%0A%20%20%20%20console.log%28%22Anoto%20gol.%22%29%3B%0A%20%20%7D%0A%7D%0Aconst%20deportistas%20%3D%20%5B%0A%20%20new%20Basketbolista%28%22LeBron%22%29,%0A%20%20new%20Futbolista%28%22Lionel%22%29%5D%3B%0Afor%20%28var%20dep%20of%20deportistas%29%20%7B%0A%20%20dep.pres%C3%A9ntate%28%29%3B%0A%20%20dep.anota%28%29%3B%0A%7D&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">Programa animado de clases abstractas.</a>
+      </p>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

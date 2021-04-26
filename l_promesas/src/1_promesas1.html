@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,
+       initial-scale=1.0">
+    <title>
+      Promesas Originales
+    </title>
+  </head>
+  <body>
+    <h1>Promesas Originales</h1>
+    <p>
+      <button
+        onclick="ejecuta();">
+        Ejecuta
+      </button>
+    </p>
+    <footer>
+      <p>
+        &copy; 2020
+        Gilberto Pacheco Gallegos.
+      </p>
+    </footer>
+    <script>
+      function ejecuta() {
+        Promise.resolve("Hola").
+          then(s => alert(
+            `Éxito 1: ${s}`)).
+          catch(e => alert(
+            "Fallo 1: " +
+            e.message));
+        Promise.reject(
+          new Error("ouch")).
+          then(s => alert(
+            `Éxito 2: ${s}`)).
+          catch(e => alert(
+            "Fallo 2: " +
+            e.message));
+      }
+    </script>
+  </body>
+</html>

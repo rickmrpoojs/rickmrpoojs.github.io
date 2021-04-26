@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>Patrón Abstract Factory</h1>
+    <div class="marco-lectura">
+      <p>Es un mecanismo para crear objetos de una forma dinámica.</p>
+      <p>
+        <a href="https://es.wikipedia.org/wiki/Abstract_Factory"
+          target="_blank">Explicación en Wikipedia.</a>
+      </p>
+      <p>
+        <a href="https://www.oodesign.com/abstract-factory-pattern.html"
+          target="_blank">Explicación en oodesign.</a>
+      </p>
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=/**%20%40interface%20*/%0Aclass%20Mensajes%20%7B%0A%20%20saluda%28%29%20%7B%0A%20%20%20%20throw%20new%20Error%28%22Interfaz%22%29%3B%0A%20%20%7D%0A%7D%0A/**%20%40interface%20*/%0Aclass%20FabricaMensajes%20%7B%0A%20%20/**%20%40returns%20%7BMensajes%7D%20*/%0A%20%20creaMensajes%28%29%20%7B%0A%20%20%20%20throw%20new%20Error%28%22Interfaz%22%29%3B%0A%20%20%7D%0A%7D%0A/**%20%40implements%20%7BMensajes%7D%20*/%0Aclass%20MensajesEsp%20%7B%0A%20%20/**%20%40override%20*/%0A%20%20saluda%28%29%20%7B%0A%20%20%20%20console.log%28%22Hola%22%29%3B%0A%20%20%7D%0A%7D%0A/**%20%40implements%20%7BMensajes%7D%20*/%0Aclass%20MensajesIng%20%7B%0A%20%20/**%20%40override%20*/%0A%20%20saluda%28%29%20%7B%0A%20%20%20%20console.log%28%22Hi%22%29%3B%0A%20%20%7D%0A%7D%0A/**%40implements%20%7BFabricaMensajes%7D*/%0Aclass%20FabricaMensajesEsp%20%7B%0A%20%20/**%20%40returns%20%7BMensajes%7D%0A%20%20%20*%20%40override%20*/%0A%20%20creaMensajes%28%29%20%7B%0A%20%20%20%20return%20new%20MensajesEsp%28%29%3B%0A%20%20%7D%0A%7D%0A/**%40implements%20%7BFabricaMensajes%7D*/%0Aclass%20FabricaMensajesIng%20%7B%0A%20%20/**%20%40returns%20%7BMensajes%7D%0A%20%20%20*%20%40override%20*/%0A%20%20creaMensajes%28%29%20%7B%0A%20%20%20%20return%20new%20MensajesIng%28%29%3B%0A%20%20%7D%0A%7D%0Asaluda%28new%20FabricaMensajesEsp%28%29%29%3B%0Asaluda%28new%20FabricaMensajesIng%28%29%29%3B%0A/**%40param%20%7BFabricaMensajes%7D%20fab*/%0Afunction%20saluda%28fab%29%20%7B%0A%20%20const%20mens%20%3D%20fab.creaMensajes%28%29%3B%0A%20%20mens.saluda%28%29%3B%0A%7D&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">
+          Programa animado de patrón abstract factory.
+        </a>
+      </p>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

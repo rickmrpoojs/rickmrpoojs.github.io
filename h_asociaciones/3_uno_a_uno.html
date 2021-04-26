@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>Asociaciones Uno a Uno</h1>
+    <div class="marco-lectura">
+      <h2>Imagina</h2>
+      <figure>
+        <img src="img/uno_a_uno.svg" alt="Imagina asociaciones uno a uno">
+      </figure>
+      <h2>Diagrama de Clases</h2>
+      <figure>
+        <img class="dc" src="img/clases_uno_a_uno_flechas.svg"
+          alt="Diagrama de clases a uno a uno con flechas">
+        <img class="dc" src="img/clases_uno_a_uno.svg"
+          alt="Diagrama de clases a uno a uno">
+      </figure>
+      <h2>Frases</h2>
+      <p>Un piloto <em>pilotea</em> <strong>un avión</strong>.</p>
+      <p>Un avión es <em>piloteado</em> por <strong>un piloto</strong>.</p>
+      <h2>Código</h2>
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=class%20Avi%C3%B3n%20%7B%0A%20%20constructor%28modelo%29%20%7B%0A%20%20%20%20this.modelo%20%3D%20modelo%3B%0A%20%20%20%20this.piloteado%20%3D%20null%3B%0A%20%20%7D%0A%7D%0Aclass%20Piloto%20%7B%0A%20%20constructor%28nombre%29%20%7B%0A%20%20%20%20this.nombre%20%3D%20nombre%3B%0A%20%20%20%20this.pilotea%20%3D%20null%3B%0A%20%20%7D%0A%7D%0Aconst%20tToin121%20%3D%20new%20Avi%C3%B3n%28%22toin121%22%29%3B%0Alet%20tQk%20%3D%20new%20Piloto%28%22qk%22%29%3B%0AtToin121.piloteado%20%3D%20tQk%3B%0AtQk.pilotea%20%3D%20tToin121%3B%0AtQk%20%3D%20null%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">
+          Programa animado de asociaciones uno a uno.
+        </a>
+      </p>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <script type="module" src="/lib/muestra-codigo.js"></script>
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>f</h1>
+    <div class="horizontal">
+      <muestra-codigo>
+        <div>
+          <div><span style="color: #0000ff;">var</span>&nbsp;<span
+              style="color: #001080;">x</span>&nbsp;=&nbsp;<span
+              style="color: #795e26;">fna</span>(<span
+              style="color: #098658;">8</span>,&nbsp;<span
+              style="color: #098658;">5</span>);</div>
+          <div><span style="color: #001080;">console</span>.<span
+              style="color: #795e26;">log</span>(<span
+              style="color: #795e26;">fna</span>(<span
+              style="color: #098658;">4</span>,&nbsp;<span
+              style="color: #098658;">1</span>));</div>
+          <div><span style="color: #001080;">console</span>.<span
+              style="color: #795e26;">log</span>(<span
+              style="color: #001080;">x</span>);</div>
+          <div><span style="color: #0000ff;">function</span>&nbsp;<span
+              style="color: #795e26;">fna</span>(<span
+              style="color: #001080;">t</span>,&nbsp;<span
+              style="color: #001080;">bc</span>)&nbsp;{</div>
+          <div>&nbsp;&nbsp;<span style="color: #001080;">console</span>.<span
+              style="color: #795e26;">log</span>(<span
+              style="color: #001080;">t</span>&nbsp;+&nbsp;<span
+              style="color: #001080;">bc</span>&nbsp;*&nbsp;<span
+              style="color: #098658;">2</span>);</div>
+          <div>&nbsp;&nbsp;<span
+              style="color: #af00db;">return</span>&nbsp;<span
+              style="color: #098658;">1</span>&nbsp;+&nbsp;<span
+              style="color: #001080;">t</span>&nbsp;*&nbsp;<span
+              style="color: #098658;">8</span>;</div>
+          <div>}</div>
+        </div>
+      </muestra-codigo>
+      <div>
+        <h3>Salida</h3>
+        <pre><samp>18
+6
+33
+65</samp></pre>
+      </div>
+    </div>
+    <div class="marco-lectura">
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=var%20x%20%3D%20fna%288,%205%29%3B%0Aconsole.log%28fna%284,%201%29%29%3B%0Aconsole.log%28x%29%3B%0Afunction%20fna%28t,%20bc%29%20%7B%0A%20%20console.log%28t%20%2B%20bc%20*%202%29%3B%0A%20%20return%201%20%2B%20t%20*%208%3B%0A%7D&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target=_blank>Visualiza el código en Python Tutor.</a>
+      </p>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

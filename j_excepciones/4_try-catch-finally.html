@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>try-catch-finally</h1>
+    <div class="marco-lectura">
+      <figure class="columnas2">
+        <img src="img/try-catch-finally.svg"
+          alt="Diagrama de try-catch-finally."
+          style="max-width: 350px;">
+        <img src="img/try-error-catch-finally.svg"
+          alt="Diagrama de try-catch-finally con error."
+          style="max-width: 350px;">
+      </figure>
+      <p>
+        Es una combinación de las 2 anteriores. Siempre restablece el
+        fujo normal y siempre se ejecutan las
+        <i>instrucciones que siempre se ejecutan</i>
+        de la cláusula
+        <code class="language-javascript">finally</code>
+
+      </p>
+      <p>
+        Si llega al final de las llaves de
+        <code class="language-javascript">try</code>
+        sin lanzar ninguna excepción, la cláusula
+        <code class="language-javascript">catch</code>
+        y las
+        <i>instrucciones para procesar la excepción</i>
+        no se ejecutan, continuando con las
+        <i>instrucciones que siempre se ejecutan</i>
+        de la cláusula
+        <code class="language-javascript">finally</code>.
+        Finalmente se ejecutan las instrucciones que vengan después de
+        la estructura completa
+        <code class="language-javascript">try</code>
+        -
+        <code class="language-javascript">catch</code>
+        -
+        <code class="language-javascript">finally</code>.
+      </p>
+      <p>
+        Si se lanza una excepción dentro de las llaves de
+        <code class="language-javascript">try</code>,
+        las restantes instrucciones hasta cerrar llaves no se ejecutan.
+        Se atrapa la excepción, se pasa como parámetro a la cláusula
+        <code class="language-javascript">catch</code>
+        y se ejecutan las
+        <i>instrucciones para procesar la excepción</i>.
+        El flujo normal se restablece, continuando con las
+        <i>instrucciones que siempre se ejecutan</i>
+        de la cláusula
+        <code class="language-javascript">finally</code>. Finalmente se
+        ejecutan las instrucciones que vengan después de la estructura
+        completa
+        <code class="language-javascript">try</code>
+        -
+        <code class="language-javascript">catch</code>
+        -
+        <code class="language-javascript">finally</code>.
+      </p>
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=try%20%7B%0A%20%20throw%20new%20Error%28%22Ouch%22%29%3B%0A%7D%20catch%20%28e%29%20%7B%0A%20%20console.log%28%22Restablece.%22,%0A%20%20%20%20e.message%29%3B%0A%7D%20finally%20%7B%0A%20%20console.log%28%0A%20%20%20%20%22finally%20se%20ejecuta.%22%29%3B%0A%7D%0Aconsole.log%28%22Esto%20se%20realiza.%22%29%3B%0Atry%20%7B%0A%20%20console.log%28%22Try%20exitoso.%22%29%3B%0A%7D%20catch%20%28e%29%20%7B%0A%20%20console.log%28%22catch%20no%20se%20hace%22%29%3B%0A%7D%20finally%20%7B%0A%20%20console.log%28%22finally%20se%20hace.%22%29%3B%0A%7D%0Aconsole.log%28%22Esto%20se%20hace.%22%29%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">Ejemplo animado de try-catch-finally.</a>
+      </p>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

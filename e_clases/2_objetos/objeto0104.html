@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/lib/css/prueba.css">
+</head>
+
+<body>
+  <layout-cajon class="pres">
+    <mi-nav slot="nav"></mi-nav>
+    <h1></h1>
+      <section id="código">
+        <h2>Código</h2>
+        <pre><span class="numero-1">1</span> class Cl01 {
+    constructor(b) {
+      this.a = b;
+    }
+    mensaje(c) {
+      console.log(c + this.a);
+    }
+  }
+  const a = <span class="numero-1">2</span> new <span
+   class="activo">3</span> Cl01(4);
+  a.mensaje(2);
+</pre>
+      </section>
+      <section id="stack">
+        <h2>Stack</h2>
+        <div class="creación">
+          <span><span class="numero-1">1</span></span>
+          <table class="frame tabla-1">
+            <caption><i>Script</i></caption>
+            <tr>
+              <th><span class="numero-1">1</span>Cl01</th>
+              <td><span class="numero-1">1</span><a href="#id1">1</a></td>
+            </tr>
+            <tr>
+              <th colspan="2" id="congela">
+                <span class="activo">3</span>congela
+              </th>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section id="heap">
+        <h2>Heap</h2>
+        <div class="creación">
+          <span><span class="numero-1">1</span></span>
+          <table class="objeto" id="id1">
+            <caption>1: class</caption>
+            <tr>
+              <th>name</th>
+              <td>Cl01</td>
+            </tr>
+          </table>
+        </div>
+        <div class="creación">
+          <span><span class="numero-1">2</span></span>
+          <table class="objeto" id="id2">
+            <caption>2:&nbsp;Cl01</caption>
+          </table>
+        </div>
+      </section>
+      <section id="expresiones">
+        <h2>Expresiones</h2>
+        <ol>
+          <li value="3">
+            <span id="paso" class="activo">
+              <span id="new">new</span> Cl01(4)<br>
+              <a id="p2" class="parametro-1" href="#id2">2</a>
+              Cl01(<span class="parametro-2">4</span>)
+            </span>
+          </li>
+        </ol>
+      </section>
+      <section id="explicación">
+        <h2>Explicación</h2>
+        <ol style="list-style-type: lower-alpha;">
+          <li value="a">Se invoca el constructor.</li>
+          <li>
+            <a href="#congela">Se congela el registro de Script en el
+              stack.</a>
+          </li>
+          <li>
+            <a href="#paso">En expresiones se indica el paso de
+              parámetros.</a>
+            En vez de <a href="#new">new</a> se sustituye el id del objeto
+            creado, que en este caso es <a class="parametro-2" href="#id2">2</a>.
+          </li>
+        </ol>
+      </section>
+      <mi-footer></mi-footer>
+    </layout-cajon>
+  </body>
+
+</html>

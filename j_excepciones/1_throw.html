@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>throw</h1>
+    <div class="marco-lectura">
+      <p>
+        Cuando una instrucción no puede completarse por algún error, debe
+        abortar usando la instrucción<br>
+        <code class="language-javascript">throw new Error(mensaje);</code>
+      </p>
+      <p>A este proceso se le llama <dfn>Lanzar una excepción.</dfn></p>
+      <figure>
+        <img src="img/throw.svg" alt="Diagrama de throw."
+          style="max-width: 350px;">
+      </figure>
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=console.log%28%22En%20este%20ejemplo%22%29%3B%0Aconsole.log%28%22la%20instruci%C3%B3n%22%29%3B%0Athrow%20new%20Error%28%0A%20%20%22throw%20aborta%20el%20programa.%22%29%3B%0Aconsole.log%28%22Estas%20l%C3%ADneas%22%29%3B%0Aconsole.log%28%22no%20se%20ejecutan%22%29%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">Ejemplo animado de throw</a>
+      </p>
+      <p>
+        Los errores generados por la cláusula
+        <code class="language-javascript">throw</code>
+        pueden procesarse de varias formas que se verán a continuación.
+      </p>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

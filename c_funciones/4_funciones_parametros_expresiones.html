@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <script type="module" src="/lib/muestra-codigo.js"></script>
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>f</h1>
+    <div class="horizontal">
+      <muestra-codigo>
+        <div>
+          <div><span style="color: #0000ff;">function</span>&nbsp;<span
+              style="color: #795e26;">fn</span>(<span
+              style="color: #001080;">a</span>,&nbsp;<span
+              style="color: #001080;">b</span>,&nbsp;<span
+              style="color: #001080;">c</span>)&nbsp;{</div>
+          <div>&nbsp;&nbsp;<span style="color: #001080;">console</span>.<span
+              style="color: #795e26;">log</span>(<span
+              style="color: #001080;">a</span>&nbsp;+&nbsp;<span
+              style="color: #001080;">b</span>&nbsp;*&nbsp;<span
+              style="color: #001080;">c</span>);</div>
+          <div>}</div>
+          <div><span style="color: #0000ff;">const</span>&nbsp;<span
+              style="color: #0070c1;">a</span>&nbsp;=&nbsp;<span
+              style="color: #098658;">3</span>;</div>
+          <div><span style="color: #795e26;">fn</span>(<span
+              style="color: #098658;">3</span>&nbsp;-&nbsp;<span
+              style="color: #098658;">8</span>,&nbsp;<span
+              style="color: #0070c1;">a</span>,&nbsp;<span
+              style="color: #0070c1;">a</span>&nbsp;*&nbsp;<span
+              style="color: #098658;">2</span>);</div>
+          <div><span style="color: #001080;">console</span>.<span
+              style="color: #795e26;">log</span>(<span
+              style="color: #a31515;">"ggg"</span>);</div>
+        </div>
+      </muestra-codigo>
+      <div>
+        <h3>Salida</h3>
+        <pre><samp>13
+ggg</samp></pre>
+      </div>
+    </div>
+    <div class="marco-lectura">
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=function%20fn%28a,%20b,%20c%29%20%7B%0A%20%20console.log%28a%20%2B%20b%20*%20c%29%3B%0A%7D%0Aconst%20a%20%3D%203%3B%0Afn%283%20-%208,%20a,%20a%20*%202%29%3B%0Aconsole.log%28%22ggg%22%29%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target=_blank>Visualiza el código en Python Tutor.</a>
+      </p>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

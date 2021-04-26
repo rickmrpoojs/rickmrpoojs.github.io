@@ -1,0 +1,51 @@
+/* This work by Gilberto Pacheco Gallegos is licensed under the Creative Commons
+ * Atribución 4.0 Internacional License. To view a copy of this license, visit
+ * http://creativecommons.org/licenses/by/4.0/. */
+
+@import "/lib/css/mi-footer.css";
+@import "/lib/css/material-icons.css";
+@import "/lib/css/ubuntu-mono.css";
+@import "/lib/css/ubuntu.css";
+@import "/lib/css/gentium-book-basic.css";
+@import "/lib/css/estilos.css";
+
+:root {
+  --introDuracion: 2s;
+  --introFuncion: ease-out;
+  --anchoNav: 300px;
+  --anchoLectura: 900px;
+  --colLetra: black;
+  --colFondo: white;
+  --colTituloLetra: #039623;
+  --colTituloStrong: #c61b04;
+  --colSummary: black;
+  --colScrollbar: #CFD8DC;
+  --colThumb: #90a4ae;
+  --colThumb2: #5d727c;
+  --colThumbActivo: #3f3f3f;
+  --anchoThumb: 7px;
+  --borderRadiusThumb: 3.5px;
+  --colAnclaToolbarLetra: black;
+  --colAnclaToolbarFondo: white;
+  --colSombra: #49494980;
+  --colFondoNav: #e4e4e4;
+  --colNavResaltada: #dd8b11;
+  --colSecundario: #ffff82;
+  --colStack1: black;
+  --colStack2: #4f5f29;
+  --colStack3: #979716;
+  --colPar1: #740013;
+  --colPar2: #0049b8;
+  --colDescongela: #5f3e01;
+  --colTarget: #89dfe6;
+  --padMiNav: 0 0.5rem 0.5rem 0.5rem;
+  --padDiapositiva: 0.5rem;
+  --fontMono: 'Ubuntu Mono', monospace;
+  --fontSans: 'Ubuntu', sans-serif;
+  --fontSerif: 'Gentium Book Basic', serif;
+  font-family: var(--fontSerif);
+  color: var(--colLetra);
+  background-color: var(--colFondo);
+  scrollbar-width: thin;
+  scrollbar-color: var(--colThumb) var(--colScrollbar);
+}

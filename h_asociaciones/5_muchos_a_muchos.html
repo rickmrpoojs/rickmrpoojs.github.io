@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>Asociaciones Muchos a Muchos</h1>
+    <div class="marco-lectura">
+      <h2>Imagina</h2>
+      <figure>
+        <img src="img/muchos_a_muchos.svg"
+          alt="Imagina asociaciones muchos a muchos">
+      </figure>
+      <h2>Diagrama de Clases</h2>
+      <figure>
+        <img class="dc" src="img/clases_muchos_a_muchos.svg"
+          alt="Diagrama de clases a muchos a muchos">
+      </figure>
+      <h2>Frases</h2>
+      <p>Un usuario <em>usa</em> <strong>muchas computadoras</strong>.</p>
+      <p>Una computadora es <em>usada</em> por <strong>muchos usuarios</strong>.
+      </p>
+      <h2>Código</h2>
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=class%20Computadora%20%7B%0A%20%20constructor%28modelo%29%20%7B%0A%20%20%20%20this.modelo%20%3D%20modelo%3B%0A%20%20%20%20this.usada%20%3D%20%5B%5D%3B%0A%20%20%7D%0A%7D%0Aclass%20Usuario%20%7B%0A%20%20constructor%28nombre%29%20%7B%0A%20%20%20%20this.nombre%20%3D%20nombre%3B%0A%20%20%20%20this.usa%20%3D%20%5B%5D%3B%0A%20%20%7D%0A%7D%0Aconst%20tQk%20%3D%20new%20Usuario%28%22qk%22%29%3B%0Alet%20tPp%20%3D%20new%20Usuario%28%22pp%22%29%3B%0Alet%20tChp1%20%3D%20new%20Computadora%28%22chp%201%22%29%3B%0Alet%20tDella2%20%3D%20new%20Computadora%28%22della%202%22%29%3B%0AtQk.usa%20%3D%20%5BtChp1,%20tDella2%5D%3B%0AtPp.usa%20%3D%20%5BtDella2%5D%3B%0AtChp1.usada%20%3D%20%5BtQk%5D%3B%0AtDella2.usada%20%3D%20%5BtQk,%20tPp%5D%3B%0AtPp%20%3D%20null%3B%0AtChp1%20%3D%20null%3B%0AtDella2%20%3D%20null%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">
+          Programa animado de asociaciones muchos a muchos.
+        </a>
+      </p>
+    </div>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

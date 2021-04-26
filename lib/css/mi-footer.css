@@ -1,0 +1,8 @@
+mi-footer {
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  display: block;
+  text-align: center;
+  font-family: var(--fontSans);
+  font-size: small;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,
+       initial-scale=1.0">
+    <title>async-await</title>
+  </head>
+  <body>
+    <h1>async-await</h1>
+    <p>
+      <button
+        onclick="ejecuta();">
+        Ejecuta
+      </button>
+    </p>
+    <footer>
+      <p>
+        &copy; 2020
+        Gilberto Pacheco Gallegos.
+      </p>
+    </footer>
+    <script>
+      async function ejecuta() {
+        try {
+          const r1 =
+            await Promise.
+              resolve("Hola");
+          alert(`Éxito 1: ${r1}`);
+        } catch (e) {
+          alert("Falló 1: " +
+            e.message);
+        }
+        try {
+          const r2 =
+            await Promise.reject(
+              new Error("ouch"));
+          alert(`Éxito 2 ${r2}`);
+        } catch (e) {
+          alert("Falló 2: " +
+            e.message);
+        }
+      }
+    </script>
+  </body>
+</html>

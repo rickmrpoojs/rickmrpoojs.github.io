@@ -1,2 +1,4 @@
-# rickmrpoojs.github.io
-Programación Orientada a Objetos con JavaScript
+# gilpgpoojs.github.io
+Apuntes de Programación Orientada a Objetos.
+
+https://gilpgpoojs.github.io

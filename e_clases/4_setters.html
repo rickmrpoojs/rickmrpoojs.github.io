@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>c</h1>
+    <div class="marco-lectura">
+      <p>
+        En JavaScript por el momento todos los miembros de una clase son
+        públicos, pero se pueden usar convenciones para indicar niveles de
+        acceso.
+      </p>
+      <p>
+        Como hay varias convenciones, usaremos las del compilador de
+        TypeScript, que Visual Studio Code puede usar para validar el acceso.
+      </p>
+      <dl>
+        <dt><code class="language-javascript">@public</code></dt>
+        <dd>
+          <p>
+            Es el valor predefinido e indica que el miembro puede usarse desde
+            cualquier parte del código.
+          </p>
+        </dd>
+        <dt><code class="language-javascript">@private</code></dt>
+        <dt><code class="language-javascript">_miembro</code></dt>
+        <dd>
+          <p>El miembro solo debe usarse dentro de la clase que lo define.</p>
+        </dd>
+        <dt><code class="language-javascript">@protected</code></dt>
+        <dd>
+          <p>
+            El miembro solo debe usarse dentro de la clase que lo define y
+            subclases.
+          </p>
+        </dd>
+      </dl>
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=class%20ClX%20%7B%0A%20%20constructor%28%29%20%7B%0A%20%20%20%20/**%20%40private%20*/%0A%20%20%20%20this._nombre%20%3D%20%22%22%3B%0A%20%20%7D%0A%20%20get%20nombre%28%29%20%7B%0A%20%20%20%20return%20this._nombre%3B%0A%20%20%7D%0A%20%20set%20nombre%28nombre%29%20%7B%0A%20%20%20%20this._nombre%20%3D%20nombre%3B%0A%20%20%7D%0A%20%20/**%20%40public%20*/%0A%20%20get%20juega%28%29%20%7B%0A%20%20%20%20return%20%60%24%7Bthis.nombre%7D%20juega%60%3B%0A%20%20%7D%0A%7D%0Aconst%20tt1%20%3D%20new%20ClX%28%29%3B%0Att1.nombre%20%3D%20%22pp%22%3B%0Aconsole.log%28tt1.nombre%29%3B%0Aconsole.log%28tt1.juega%29%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">Ejemplo animado.</a>
+      </p>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

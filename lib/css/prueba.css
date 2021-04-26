@@ -1,0 +1,102 @@
+/*TODO Pintar stacks y números de distinto color, de acuerdo a la activación.*/
+section {
+  display       : inline-block;
+  vertical-align: top;
+  margin        : 1em;
+}
+
+section pre {
+  margin: 0;
+}
+
+samp {
+  font-weight: bold;
+}
+
+.activo {
+  display         : inline-block;
+  margin          : 0 0.2rem 0 0;
+  vertical-align  : top;
+  background-color: var(--colSecundario);
+  border          : 1px solid var(--colSecundario);
+}
+
+:target,
+:target caption {
+  background-color: var(--colTarget);
+}
+
+.numero-1 {
+  display: inline-block;
+  margin : 0 0.2rem 0 0;
+  color  : var(--colStack1);
+  border : 1px solid var(--colStack1);
+}
+
+.numero-2 {
+  display: inline-block;
+  color  : var(--colStack2);
+  border : 1px solid var(--colStack2);
+}
+
+.numero-3 {
+  display: inline-block;
+  color  : var(--colStack3);
+  border : 1px solid var(--colStack3);
+}
+
+a.parametro-1,
+.parametro-1 {
+  color: var(--colPar1);
+}
+
+a.parametro-2,
+.parametro-2 {
+  color: var(--colPar2);
+}
+
+.descongela {
+  color: var(--colDescongela);
+}
+
+table.tabla-1,
+table.tabla-1 th,
+table.tabla-1 td {
+  border: 1px solid var(--colStack1);
+}
+
+table.tabla-2,
+table.tabla-2 th,
+table.tabla-2 td {
+  border: 1px solid var(--colStack2);
+}
+
+table.tabla-3,
+table.tabla-3 th,
+table.tabla-3 td {
+  border: 1px solid var(--colStack3);
+}
+
+.frame {
+  font-family    : var(--fontMono);
+  border-collapse: collapse;
+}
+
+.frame,
+.frame th,
+.frame td {
+  border: thin solid;
+}
+
+.frame caption {
+  font-style: italic;
+}
+
+.objeto caption {
+  text-decoration: underline;
+  font-style     : italic;
+}
+
+.creación {
+  display: flex;
+}

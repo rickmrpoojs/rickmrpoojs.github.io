@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <layout-cajon>
+    <mi-nav slot="nav"></mi-nav>
+    <h1>o</h1>
+    <div class="marco-lectura">
+      <figure>
+        <img src="img/hormiga1.svg" alt="Referencia y objeto inicialmente">
+        <img src="img/hormiga2.svg" alt="Agregamos manita a">
+        <img src="img/hormiga3.svg" alt="Agregamos manita b">
+        <img src="img/hormiga4.svg" alt="Aprende a saludar">
+      </figure>
+      <h3>Property</h3>
+      <p>
+        Los datos y funciones asociados con un objeto en JavaScript reciben
+        el nombre de <dfn>property</dfn> o <dfn>propiedad</dfn>.
+      </p>
+      <p>
+        Las funciones asociadas con un objeto se llaman <dfn>método</dfn>.
+      </p>
+      <p>
+        Los datos asociados con un objeto en general se llaman
+        <dfn>atributo</dfn> o <dfn>campo</dfn>.
+      </p>
+      <p>
+        Las propiedades de un objeto al momento de diseño deben ser
+        características directas del objeto, por ejemplo <q>nombre</q>. No
+        es válido que describan características de otros objetos; por
+        ejemplo, si un objeto es una película, no es válido ponerle el
+        atributo <del><q>nombreDelDirector</q></del>.
+      </p>
+      <h3>Código</h3>
+      <p>
+        <a href="http://pythontutor.com/javascript.html#code=//%20Crea%20un%20objeto%20usando%20%7B%7D.%0A//%20Lo%20controla%20con%20la%20referencia%20tel.%0Alet%20tel%20%3D%20%7B%7D%3B%0Atel.nombre%20%3D%20%22pp%22%3B%20//%20Le%20pone%20propiedades.%0Atel.color%20%3D%20%22marr%C3%B3n%22%3B%0A//%20Le%20pone%20un%20m%C3%A9todo.%0Atel.saluda%20%3D%20%28%29%20%3D%3E%20console.log%28%22Hola.%22%29%3B%0Atel.saluda%28%29%3B%0Aconsole.log%28tel.nombre%29%3B%0Aconsole.log%28tel.color%29%3B%0Atel%20%3D%20null%3B%20//%20Cuelga.&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+          target="_blank">Ejemplo animado.</a>
+      </p>
+    </div>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+</html>

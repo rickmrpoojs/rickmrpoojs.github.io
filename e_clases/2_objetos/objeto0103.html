@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/js/config.js"></script>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/lib/css/prueba.css">
+</head>
+
+<body>
+  <layout-cajon class="pres">
+    <mi-nav slot="nav"></mi-nav>
+    <h1></h1>
+    <section id="código">
+      <h2>Código</h2>
+      <pre><span class="numero-1">1</span> class Cl01 {
+    constructor(b) {
+      this.a = b;
+    }
+    mensaje(c) {
+      console.log(c + this.a);
+    }
+  }
+  const a = <span class="activo">2</span> new Cl01(4);
+  a.mensaje(2);
+</pre>
+    </section>
+    <section id="stack">
+      <h2>Stack</h2>
+      <div class="creación">
+        <span><span class="numero-1">1</span></span>
+        <table class="frame">
+          <caption><i>Script</i></caption>
+          <tr>
+            <th><span class="numero-1">1</span>Cl01</th>
+            <td><span class="numero-1">1</span><a href="#id1">1</a></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="heap">
+      <h2>Heap</h2>
+      <div class="creación">
+        <span><span class="numero-1">1</span></span>
+        <table class="objeto" id="id1">
+          <caption>1: class</caption>
+          <tr>
+            <th>name</th>
+            <td>Cl01</td>
+          </tr>
+        </table>
+      </div>
+      <div class="creación">
+        <span class="activo">2</span>
+        <table class="objeto" id="id2">
+          <caption>2:&nbsp;Cl01</caption>
+        </table>
+      </div>
+    </section>
+    <section id="explicación">
+      <h2>Explicación</h2>
+      Se crea un
+      <a href="#id2">objeto de la clase Cl01, sin ninguna property</a>
+      y se le asigna un identificador, que en este caso es
+      <a href="#id2">2</a>.
+    </section>
+    <mi-footer></mi-footer>
+  </layout-cajon>
+</body>
+
+</html>
