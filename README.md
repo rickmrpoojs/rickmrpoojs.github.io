@@ -1,4 +1,4 @@
-# gilpgpoojs.github.io
+# rickmrpoojs.github.io
 Apuntes de Programación Orientada a Objetos.
 
-https://gilpgpoojs.github.io
+https://rickmrpoojs.github.io
